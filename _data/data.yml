@@ -57,9 +57,7 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-    I am currently immersed in the domain of recommender systems and deep learning as I pursue my master's thesis at Porsche AG. My passion lies in bridging the gap between applied research and tangible product outcomes. With more than 2 years of hands-on experience in developing and implementing Deep learning algorithms across diverse domains, I thrive at the intersection of machine learning and data science. 
-
-Prior to this, I accumulated over 4 years of progressive cross-departmental experience as an Associate Technical Product Manager in the energy sector.
+    I am currently immersed in the domain of recommender systems and deep learning as I pursue my master's thesis at Porsche AG. My passion lies in bridging the gap between applied research and tangible product outcomes. With more than 2 years of hands-on experience in developing and implementing Deep learning algorithms across diverse domains, I thrive at the intersection of machine learning and data science. Prior to this, I accumulated over 4 years of progressive cross-departmental experience as an Associate Technical Product Manager in the energy sector.
 education:
     title: Education
     info:
@@ -95,7 +93,7 @@ experiences:
         company: DLR, Stade, Germany
         details: |
           -Engineered an efficient machine learning pipeline, and successfully deployed Dockerized ML models and web applications on the cloud.
-        - Designed an experiment set up on Airbus A320 wing section for data acquisition with tradesperson.
+          - Designed an experiment set up on Airbus A320 wing section for data acquisition with tradesperson.
       - role: Student Research Assistant (Part time)
         time: April 2022 - May 2023
         company: Institute of Fluid Mechanics (TU Braunschweig)
@@ -148,7 +146,7 @@ projects:
     intro: >
       Various hobby and academic projects are list here.
     assignments:
-      - title: Context-Aware In-Car Recommender System: Predicting Interactions with Driving Context
+      - title: Context-Aware In-Car Recommender System - Predicting Interactions with Driving Context
         link: "#hook"
         tagline: "A responsive website template designed to help startups promote, market and sell their products."
 
