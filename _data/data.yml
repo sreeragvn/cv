@@ -1,6 +1,3 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
 
 sidebar:
     position: right # position of the sidebar : left or right
@@ -8,39 +5,39 @@ sidebar:
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Sreerag V Naveenachandran
-    tagline: Data scientist
+    name: Alan Doe
+    tagline: Full Stack Developer
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: sreerag.office@gmail.com
-    # phone: 012 345 6789
-    # timezone: America/Cancun Timezone
-    # citizenship:
-    # website: blog.webjeda.com #do not add http://
-    linkedin: sreeragvn
-    xing: sreeragvn
-    github: sreeragvn
-    # telegram: # add your nickname without '@' sign
+    email: hello@webjeda.com
+    phone: 012 345 6789
+    timezone: America/Cancun Timezone
+    citizenship:
+    website: blog.webjeda.com #do not add http://
+    linkedin: alandoe
+    xing: alandoe
+    github: sharu725
+    telegram: # add your nickname without '@' sign
     gitlab:
     bitbucket:
-    # twitter: '@webjeda'
-    # hstack-overflow: # Number/Username, e.g. 123456/alandoe
+    twitter: '@webjeda'
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
-    goodreads: sreeragvn # Number-Username, e.g. 123456-alandoe
-    # pdf: http://www.africau.edu/images/default/sample.pdf
+    goodreads: # Number-Username, e.g. 123456-alandoe
+    pdf: http://www.africau.edu/images/default/sample.pdf
 
     languages:
       title: Languages
       info:
         - idiom: English
+          level: Native
+
+        - idiom: French
           level: Professional
 
-        - idiom: German
-          level: Basic
-
-        - idiom: Malayalam
-          level: Native
+        - idiom: Spanish
+          level: Professional
 
     interests:
       title: Interests
@@ -48,7 +45,7 @@ sidebar:
         - item: Climbing
           link:
 
-        - item: Reading
+        - item: Snowboarding
           link:
 
         - item: Cooking
@@ -57,96 +54,128 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-    I am currently immersed in the domain of recommender systems and deep learning as I pursue my master's thesis at Porsche AG. My passion lies in bridging the gap between applied research and tangible product outcomes. With more than 2 years of hands-on experience in developing and implementing Deep learning algorithms across diverse domains, I thrive at the intersection of machine learning and data science. Prior to this, I accumulated over 4 years of progressive cross-departmental experience as an Associate Technical Product Manager in the energy sector.
+      Summarise your career here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. You can [download this free resume/CV template here]().
+      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
+      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      Donec quam felis, ultricies nec, pellentesque eu.
+      Second paragraph if required.
 education:
     title: Education
     info:
-      - degree: MSc in Computational sciences in Engineering
-        university: TU Braunschweig
-        # time: 2011 - 2012
+      - degree: MSc in Computer Science
+        university: University of London
+        time: 2011 - 2012
         details: |
-          Pattern Recognition, Continuous Optimization in Data Science, Advanced Computer lab Data Science, Scientific Machine Learning, Methods of Uncertainty Analysis 	& Quantification, Advanced Programming-Lab, Algorithms & Programming
-      - #degree: BSc in Applied Mathematics
-        #university: Bristol University
-        #time: 2007 - 2011
-        #details: |
-        #  Describe your study here lorem ipsum dolor sit amet, consectetuer
-        #  adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        #  sociis natoque penatibus et magnis dis parturient montes, nascetur
-        #  ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        #  pretium quis, sem.
-        #    - Bullet point
-        #   - Bullet point
+          Describe your study here lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+          pretium quis, sem.
+            - Bullet point
+            - Bullet point
+      - degree: BSc in Applied Mathematics
+        university: Bristol University
+        time: 2007 - 2011
+        details: |
+          Describe your study here lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+          pretium quis, sem.
+            - Bullet point
+            - Bullet point
 
 experiences:
     title: Experiences
     info:
-      - role: AI Research intern (Full time)
-        time: October 2023 - Present
-        company: Porsche AG, Weissach, Germany
+      - role: Lead Developer
+        time: 2015 - Present
+        company: Startup Hubs, San Francisco
         details: |
-          - Conducted exploratory analysis of driver interactions with infotainment screens, utilizing CAN bus data to identify patterns based on varying contexts.
-          - Performed online testing of AI models in development vehicles to ensure real-time functionality and accuracy.
-          - Served as a pivotal member of the Porsche Onetouch team, facilitating collaboration between Porsche AG, Porsche Engineering, and Porsche Digital in the use cases \& architecture design, deployment, and testing phases of a recommender system for infotainment screens.
-      - role: Data science research intern (Full time)
-        time: April 2023 - September 2023
-        company: DLR, Stade, Germany
+          Describe your role here lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Donec quam felis, ultricies nec,
+          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
+          error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+          architecto beatae vitae dicta sunt explicabo.
+            - Bullet point
+            - Bullet point
+      - role: Senior Software Engineer
+        time: 2014 - 2015
+        company: Google, London
         details: |
-          -Engineered an efficient machine learning pipeline, and successfully deployed Dockerized ML models and web applications on the cloud.
-          - Designed an experiment set up on Airbus A320 wing section for data acquisition with tradesperson.
-      - role: Student Research Assistant (Part time)
-        time: April 2022 - May 2023
-        company: Institute of Fluid Mechanics (TU Braunschweig)
+          Describe your role here lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Donec quam felis, ultricies nec,
+          pellentesque eu, pretium quis, sem.
+            - Bullet point
+            - Bullet point
+      - role: UI Developer
+        time: 2012 - 2014
+        company: Amazon, London
         details: |
-          - Designed and implemented advanced data preprocessing pipelines for airfoil performance analysis, encompassing data sanitation, validation, imputation, feature computation. Conducted extensive experimentation with various algorithms to enhance predictive accuracy.
+          Describe your role here lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Donec quam felis, ultricies nec,
+          pellentesque eu, pretium quis, sem.
+            - Bullet point
+            - Bullet point
 
-  # certifications:
-  #       title: Certifications
-  #       list:
-  #         - name: CV Builder
-  #           start: 2020
-  #           end: 2021
-  #           organization: Microsoft
-  #           credentialid: 111-222
-  #           credentialurl: www.google.com
-  #           credentialname: Google
-  #           details: |
-  #             Details about cert. Lorem ipsum dolor sit amet, consectetur
-  #             adipiscing elit.
-  #             Nullam eget orci purus. Nullam ultrices neque nibh.
-  #             Aenean fermentum, felis vulputate suscipit accumsan,
-  #             sem enim bibendum augue, sed convallis arcu lacus at dui.
-  #             Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-  #             Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-  #             Praesent venenatis erat non augue suscipit consectetur.
+certifications:
+      title: Certifications
+      list:
+        - name: CV Builder
+          start: 2020
+          end: 2021
+          organization: Microsoft
+          credentialid: 111-222
+          credentialurl: www.google.com
+          credentialname: Google
+          details: |
+            Details about cert. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+            Nullam eget orci purus. Nullam ultrices neque nibh.
+            Aenean fermentum, felis vulputate suscipit accumsan,
+            sem enim bibendum augue, sed convallis arcu lacus at dui.
+            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+            Praesent venenatis erat non augue suscipit consectetur.
 
-  #             Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-  #             fringilla vel. Ut euismod, sem sed vulputate venenatis,
-  #             justo diam viverra velit, sed rhoncus leo leo eu justo.
-  #             Suspendisse placerat risus ante, sed porta nisi blandit at.
-  #         - name: Git learning
-  #           start: 2019
-  #           end:
-  #           organization: Microsoft
-  #           credentialid: 111-222
-  #           credentialurl: www.github.com
-  #           credentialname: Github
-  #           details: |
-  #             Older certification. Lorem ipsum dolor sit amet, consectetur
-  #             adipiscing elit.
-  #             Nullam eget orci purus. Nullam ultrices neque nibh.
-  #             Aenean fermentum, felis vulputate suscipit accumsan,
-  #             sem enim bibendum augue, sed convallis arcu lacus at dui.
-  #             Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-  #             Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-  #             Praesent venenatis erat non augue suscipit consectetur.
+            Second paragraph. Sed eleifend enim ante, vitae efficitur purus
+            fringilla vel. Ut euismod, sem sed vulputate venenatis,
+            justo diam viverra velit, sed rhoncus leo leo eu justo.
+            Suspendisse placerat risus ante, sed porta nisi blandit at.
+        - name: Git learning
+          start: 2019
+          end:
+          organization: Microsoft
+          credentialid: 111-222
+          credentialurl: www.github.com
+          credentialname: Github
+          details: |
+            Older certification. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+            Nullam eget orci purus. Nullam ultrices neque nibh.
+            Aenean fermentum, felis vulputate suscipit accumsan,
+            sem enim bibendum augue, sed convallis arcu lacus at dui.
+            Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+            Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+            Praesent venenatis erat non augue suscipit consectetur.
 
 projects:
     title: Projects
     intro: >
-      Various hobby and academic projects are list here.
+      You can list your side projects in this
+      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
     assignments:
-      - title: Context-Aware In-Car Recommender System - Predicting Interactions with Driving Context
+      - title: Velocity
         link: "#hook"
         tagline: "A responsive website template designed to help startups promote, market and sell their products."
 
