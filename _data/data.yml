@@ -75,15 +75,16 @@ education:
         university: TU Braunschweig
         time: Oct 2021 - May 2024
         details: |
-          Final grade 1.4 (German scale, 1.0 = best). Top 4% of the graduating class.
-          Recipient of the Deutschlandstipendium.
+          - Final grade 1.4 (German scale, 1.0 = best). 
+          - Top 4% of the graduating class.
+          - Recipient of the Deutschlandstipendium.
       - degree: B.Tech in Mechanical Engineering
         university: University of Kerala
         time: Aug 2012 - Apr 2016
         details: |
-          First-author publication on flow-separation control in rocket nozzles
+          - First-author publication on flow-separation control in rocket nozzles
           (Materials Today: Proceedings), from a bachelor thesis at ISRO.
-          Top 1% in the KEAM state engineering entrance exam (106,071 candidates).
+          - Top 1% in the KEAM state engineering entrance exam (106,071 candidates).
 
 experiences:
     title: Experiences
