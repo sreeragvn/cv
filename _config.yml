@@ -4,9 +4,7 @@
 title: Sreerag V Naveenachandran
 url: 'https://sreeragvn.github.io' # set to your GitHub Pages URL, e.g. https://sreeragvn.github.io
 
-#change it according to your repository name
-# disabling since we are using a custom domain
-#baseurl: '/online-cv' 
+baseurl: '/cv'
 
 description: Applied ML / Data Scientist — Industrial Time Series, Anomaly Detection, Generative Models
 # Style will be applied only after restarting the build or serve. Just choose one of the options.
