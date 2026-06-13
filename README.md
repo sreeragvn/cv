@@ -10,7 +10,7 @@ Live: <https://sreeragvn.github.io/cv/>
 docker compose up
 ```
 
-Site is served at <http://localhost:4000>. Edit `_data/data.yml` to update content.
+Site is served at <http://localhost:4000/cv/>. Edit `_data/data.yml` to update content.
 
 ## Credits
 
