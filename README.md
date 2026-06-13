@@ -2,7 +2,7 @@
 
 Personal CV site for Applied ML / Data Scientist work.
 
-Live: <https://sreeragvn.github.io>
+Live: <https://sreeragvn.github.io/cv/>
 
 ## Local preview
 
