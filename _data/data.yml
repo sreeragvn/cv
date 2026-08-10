@@ -6,7 +6,7 @@ sidebar:
 
     # Profile information
     name: Sreerag V Naveenachandran
-    tagline: Applied ML / Data Scientist — Industrial Time Series, Anomaly Detection, Generative Models
+    tagline: Data Scientist — Industrial Time Series, Forecasting & Predictive Maintenance
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -34,7 +34,7 @@ sidebar:
           level: C1 / Professional
 
         - idiom: German
-          level: B1
+          level: B1 / improving
 
         - idiom: Malayalam
           level: Native
@@ -51,10 +51,10 @@ sidebar:
         - item: Photography
           link:
 
-        - item: Travel
+        - item: Film
           link:
 
-        - item: Film
+        - item: Travel
           link:
 
         - item: Cooking
@@ -63,10 +63,12 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Applied ML data scientist with 3 years building and deploying industrial time-series,
-      anomaly-detection, and generative models across aviation, weather, automotive, and optics.
-      Peer-reviewed work at **ICLR 2026** and **ACM AutomotiveUI '24**, with production ML
-      grounded in prior technical product-management experience.
+      Data Scientist delivering industry-funded ML projects end-to-end for manufacturing clients in
+      high-precision optics, gimbal systems and weather forecasting — owning each project from
+      requirement scoping and proposal writing through model development to client handover, and
+      presenting results directly to client management. Mechanical engineer by training, with three
+      years in applied ML on top of four years of client-facing technical product management for
+      industrial asset-management software. Co-author on an **ICLR 2026** paper.
 
 education:
     title: Education
@@ -75,9 +77,10 @@ education:
         university: TU Braunschweig
         time: Oct 2021 - May 2024
         details: |
-          - Final grade 1.4 (German scale, 1.0 = best). 
-          - Top 4% of the graduating class.
+          - Final grade 1.4 (German scale, 1.0 = best) — top 4% of the graduating class.
           - Recipient of the Deutschlandstipendium.
+          - Focus: pattern recognition, scientific machine learning, uncertainty quantification,
+          continuous optimization for data science.
       - degree: B.Tech in Mechanical Engineering
         university: University of Kerala
         time: Aug 2012 - Apr 2016
@@ -89,67 +92,103 @@ education:
 experiences:
     title: Experiences
     info:
+      # Accuracy constraints mirrored from the PDF: "deployed" is used ONLY for the
+      # DLR Stade CFRP prototype — the optics system is delivered, not running in
+      # the client's live workflow. The aircraft-composite work is internal DLR and
+      # is never described as a client engagement. No client is named.
       - role: Data Scientist
         time: Oct 2024 - Present
         company: DLR — Deutsches Zentrum für Luft- und Raumfahrt, Jena, Germany
         details: |
-            - Engineered gradient boosting models predicting lens manufacturing costs and steps
-              from specifications with <20% error, automating cost estimation where no automated
-              method previously existed.
-            - Published TEDM, a diffusion-based generative model for time-series forecasting,
-              at ICLR 2026, achieving state-of-the-art results across multiple forecasting benchmarks.
-            - Deployed production forecasting and anomaly-detection pipelines on telemetry streams
-              for aviation and weather-monitoring clients.
-            - Built a computer vision pipeline detecting damage in aircraft composite structures
-              from ultrasonic D-scans with <5% error.
-            - Designed and ran a recurring deep-learning workshop series with hands-on exercises
-              for 50+ colleagues across DLR institutes.
+            - Technical lead on three industry-funded client projects — high-precision optics
+              manufacturing, gimbal systems and weather forecasting — plus one internal DLR project:
+              scoping requirements with the client, co-writing project proposals, building the models,
+              and presenting results and trade-offs to client management.
+            - Built and delivered the client's first automated process-planning and cost-estimation
+              system for high-precision lens manufacturing, where quoting previously had no systematic
+              method: predicts the required production steps (macro-averaged across 26 process types:
+              0.92 balanced accuracy, 0.72 F1) and the resulting cost to a median 10% error, on a
+              grouped split that stops near-identical lenses leaking between folds, with
+              underprediction penalised above overprediction to keep quotes commercially safe.
+            - Built the upstream data platform end to end — parsing 8,163 raw specification files
+              (JSON, SVG, KAD) into 236 validated geometry, tolerance and material features with
+              cross-source consistency checks.
+            - Benchmarked five forecasting architectures (LSTM, N-HiTS, TimesNet, PatchTST,
+              iTransformer) on 9-channel gimbal telemetry, halving prediction error against the LSTM
+              baseline; forecasting and anomaly-detection work for the gimbal and weather clients is
+              ongoing.
+            - Built a computer vision model predicting the residual compressive strength of
+              impact-damaged aircraft composite structures to within 5% from ultrasonic D-scans,
+              replacing destructive coupon testing.
+            - Ship client work as tested, reproducible software: config-driven experiments with
+              tracked runs, dataset fingerprinting and seeded splits, 400+ automated tests and
+              enforced lint/type checks on the core modelling framework.
+            - Co-authored TEDM, a diffusion-based time-series forecasting model, published at ICLR 2026.
+            - Designed and ran a recurring hands-on deep-learning workshop series for 50+ colleagues
+              across DLR institutes; supervises students on project work.
 
       - role: Machine Learning Intern
         time: Oct 2023 - May 2024
         company: Porsche AG, Weissach, Germany
         details: |
-            - Published CARSI II, a transformer-based recommender for automotive infotainment,
-              at ACM AutomotiveUI '24 (Best Work-in-Progress Award), reaching >84% top-3 accuracy
-              and recall for cold-start users after fine-tuning.
-            - Adapted the self-supervised contrastive learning framework (SimCLR) with custom
-              input augmentations to learn richer representations from sparse driver-interaction data.
+            - Delivered a context-aware infotainment recommender as a proof of concept with Porsche's
+              in-car UX and engineering teams, reaching >84% top-3 accuracy and recall for previously
+              unseen drivers after fine-tuning; published at ACM AutomotiveUI '24 (Best
+              Work-in-Progress Award).
+            - Analyzed driver–infotainment interaction data to identify which features drivers actually
+              use in which contexts — time of day, route type, driving conditions — to inform UI
+              simplification decisions.
+            - Learned usable representations from sparse interaction data by adapting self-supervised
+              contrastive learning (SimCLR) with custom input augmentations.
 
       - role: Machine Learning Intern
         time: Apr 2023 - Sep 2023
         company: DLR — Deutsches Zentrum für Luft- und Raumfahrt, Stade, Germany
         details: |
-            - Developed and deployed an internal DLR prototype for CFRP leakage detection
-              and localization using a multi-task neural network with uncertainty quantification.
-            - Improved model accuracy by >12% by encoding geometric equivariance of the sensor
-              layout as a network-layer constraint.
+            - Built and deployed an internal DLR prototype locating vacuum-bag leaks during autoclave
+              manufacturing of large aircraft composite parts — previously a manual expert search that
+              delayed production — owning it end to end from sensor data acquisition through to deployment.
+            - Extended the model from single- to multi-leak localization and attached calibrated
+              confidence to every prediction, so operators know when to trust the result.
+            - Improved localization accuracy by >12% over the same architecture without equivariance
+              constraints, by encoding the geometry of the sensor layout directly into the model.
 
       - role: Associate Product Manager — Technical
         time: Sep 2017 - Aug 2021
         company: Kalkitech, Kochi, India
         details: |
-            - Developed thermodynamic and statistical models detecting equipment degradation from
-              sensor data and generating predictive-maintenance schedules, reducing unplanned
-              downtime in thermal power plants.
-            - Built Grafana and Power BI dashboards tracking plant KPIs across 15+ multi-site
-              client accounts in Europe, Asia, and the Middle East.
-            - Led cross-functional delivery for Eltrix asset-management software, translating
-              stakeholder requirements into product specifications for engineering, business,
-              and client teams.
+            - Led cross-functional delivery of the Eltrix asset-management platform across 15+
+              multi-site client accounts in Europe, Asia and the Middle East, translating plant
+              operator requirements into product specifications for engineering, business and
+              client teams.
+            - Built thermodynamic and statistical models detecting equipment degradation from plant
+              sensor data and generating maintenance schedules, moving thermal power plant clients
+              from reactive repair to planned preventive maintenance.
+            - Applied ASME, EPRI and HEI performance standards to build plant performance models and
+              diagnostics that improved asset efficiency and lowered operating cost.
+            - Built Grafana and Power BI dashboards tracking plant KPIs, giving operators and managers
+              near-real-time visibility across sites.
+
+      - role: Earlier
+        time: 2016 - 2017
+        company: Tata Consultancy Services · Ernst & Young, India
+        details: |
+            - Assistant System Engineer Trainee, Tata Consultancy Services (2017).
+            - Data Analyst, Ernst & Young (2016).
 
 publications:
     title: Publications
     intro: |
       Peer-reviewed publications in machine learning and engineering.
     papers:
-      - title: "TEDM: Diffusion-Based Generative Model for Time-Series Forecasting"
+      - title: "TEDM: Time Series Forecasting with Elucidated Diffusion Models"
         link: "https://openreview.net/forum?id=kQee8MObMc"
-        authors: Sreerag V Naveenachandran et al.
+        authors: "Edgardo Solano Carrillo, Sreerag V Naveenachandran, Julia Niebling"
         conference: "ICLR 2026"
 
       - title: "CARSI II: A Context-Driven Intelligent User Interface"
         link: "https://doi.org/10.1145/3641308.3685036"
-        authors: "Wiedner, Marco and V Naveenachandran, Sreerag and Hallgarten, Philipp et al."
+        authors: "Marco Wiedner, Sreerag V Naveenachandran, Philipp Hallgarten et al."
         conference: "ACM AutomotiveUI '24 — Best Work-in-Progress Award"
 
       - title: "Parametric study on a method to control flow separation in rocket nozzles"
@@ -157,27 +196,33 @@ publications:
         authors: "VN Sreerag, Fazil Mohammad, Vishnu Nandan, Anurag Pramod, KP Subhajayan, Samik Jash"
         conference: "Materials Today: Proceedings, 2021 (IMEC 2019)"
 
+# Percentage "proficiency" bars were removed deliberately: a self-assigned
+# "Python 95%" is unfalsifiable and reads as a negative to technical reviewers.
+# Categories mirror resume/cv/skills.tex.
 skills:
-    title: Skills &amp; Proficiency
+    title: Skills
 
     toolset:
-      - name: Python & SQL
-        level: 95%
+      - name: Programming & Data
+        details: Python, SQL, Pandas, Polars, NumPy, SciPy, Git, Linux
 
-      - name: PyTorch / Deep Learning
-        level: 90%
+      - name: Machine Learning
+        details: Time-series forecasting, anomaly detection, predictive maintenance, LightGBM, XGBoost, CatBoost, scikit-learn, SHAP explainability
 
-      - name: Time-Series Forecasting & Anomaly Detection
-        level: 90%
+      - name: Deep Learning
+        details: PyTorch, PyTorch Lightning, CNNs, transformers, computer vision, generative / diffusion models, contrastive learning, uncertainty quantification
 
-      - name: scikit-learn / Gradient Boosting
-        level: 88%
+      - name: Engineering Practice
+        details: pytest, ruff, mypy, CI (GitHub Actions, GitLab CI), Hydra config-driven experiments, MLflow, Optuna, pandera validation, uv
 
-      - name: MLOps (MLflow, Docker, FastAPI, AWS SageMaker)
-        level: 80%
+      - name: Deployment & MLOps
+        details: Docker, FastAPI, MLflow, AWS SageMaker
 
-      - name: Data Viz (Matplotlib, Seaborn, Grafana, Power BI)
-        level: 78%
+      - name: Visualization & Reporting
+        details: Matplotlib, Seaborn, Plotly, Power BI, Grafana
+
+      - name: Domain
+        details: Industrial sensor & telemetry data, manufacturing process data, time-series compression, non-destructive testing, power-plant operations
 
 # footer: >
 #     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
