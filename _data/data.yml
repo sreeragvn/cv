@@ -14,7 +14,7 @@ sidebar:
     phone: "+49 1632175283"
     timezone: Europe/Berlin Timezone
     citizenship: EU Blue Card (no sponsorship needed)
-    website: #do not add http://
+    website: sreeragvn.github.io/cv #do not add http://
     linkedin: sreeragvn
     xing:
     github: sreeragvn
@@ -25,7 +25,10 @@ sidebar:
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: # link to hosted PDF once deployed
+    # Rendered by _includes/contact.html:94 as a "Resume PDF" link. Lives under
+    # assets/ because resume/ is a nested git repo the outer repo cannot track.
+    # Descriptive filename so the download is identifiable in a recruiter's folder.
+    pdf: /cv/assets/Sreerag_V_Naveenachandran_CV.pdf
 
     languages:
       title: Languages
@@ -175,6 +178,24 @@ experiences:
         details: |
             - Assistant System Engineer Trainee, Tata Consultancy Services (2017).
             - Data Analyst, Ernst & Young (2016).
+
+# Public code only. Client work (optics, gimbal, weather) is deliberately absent:
+# it cannot be linked, and describing unlinkable work here adds nothing the CV
+# does not already say.
+projects:
+    title: Open Source & Public Code
+    assignments:
+      - title: "TEDM — Time Series Forecasting with Elucidated Diffusion Models"
+        link: https://gitlab.com/dlr-dw/tedm
+        tagline: >
+          Official implementation of the ICLR 2026 paper. Diffusion-based multivariate forecasting,
+          evaluated across eleven public benchmark datasets.
+
+      - title: "local-VQA-tool — on-device visual question answering"
+        link: https://github.com/sreeragvn/local-VQA-tool
+        tagline: >
+          Open-weight vision-language models running entirely on CPU. Every backend asserts a loopback
+          endpoint and refuses to start otherwise, so images never leave the machine.
 
 publications:
     title: Publications
