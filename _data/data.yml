@@ -6,7 +6,7 @@ sidebar:
 
     # Profile information
     name: Sreerag V Naveenachandran
-    tagline: "Data Scientist | Applied ML, Forecasting & Computer Vision"
+    tagline: "Data Scientist | Industrial Time Series, Forecasting & Predictive Maintenance"
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
@@ -68,8 +68,10 @@ sidebar:
 career-profile:
     title: Summary
     summary: |
-      Data Scientist delivering end-to-end machine-learning projects for industrial clients, from
-      requirements and proposal writing through model development, validation, and handover. Combines
+      Data Scientist delivering end-to-end machine-learning projects for industrial clients, working
+      from sensor, telemetry, manufacturing, and inspection data across high-precision optics, gimbal
+      systems, and weather forecasting, from requirements and proposal writing through model
+      development, validation, and handover. Combines
       three years of applied ML in forecasting, predictive maintenance, and computer vision with four
       years of client-facing technical product management and a mechanical-engineering background.
       Co-author of an **ICLR 2026** paper.
@@ -96,36 +98,44 @@ education:
 experiences:
     title: Professional Experience
     info:
-      # Accuracy constraints mirrored from the PDF: "deployed" is used ONLY for the
-      # DLR Stade CFRP prototype — the optics system is delivered, not running in
-      # the client's live workflow. The aircraft-composite work is internal DLR and
-      # is never described as a client engagement. No client is named.
+      # Accuracy constraints mirrored from the PDF:
+      #  - "deployed" is used ONLY for the DLR Stade CFRP prototype; the optics
+      #    system is delivered, not running in the client's live workflow.
+      #  - Both aviation-adjacent projects serve an aviation client. Role differs:
+      #    sole contributor on the Stade leak work, ML-topic contributor only on
+      #    the D-scan project — so nothing there implies project-level ownership.
+      #  - Clients are described by sector, never named.
       - role: Data Scientist
         time: Oct 2024 - Present
         company: DLR — Deutsches Zentrum für Luft- und Raumfahrt, Jena, Germany
         details: |
             - Technical lead on three industry-funded client projects in high-precision optics,
               gimbal systems, and weather forecasting, owning requirements, proposals, model development,
-              and presentations to client management; also contribute to one internal DLR project.
+              and presentations to client management; ML contributor on a fourth project for an
+              aviation client.
             - Built and delivered the client's first automated process-planning system for
-              high-precision lens manufacturing: occurrence prediction achieves an overall
-              0.92 macro balanced accuracy across 26 learned steps; the 15 highest-precision classifiers
-              reach 0.94 macro F1 and 0.96 pooled micro F1 in nested five-fold cross-validation.
-            - Built the associated cost-estimation and data pipeline, processing 8,163 lens designs
-              into 236 validated features from JSON/SVG specifications and KAD routing data; cost
-              predictions achieve approximately 10% pooled out-of-fold median absolute percentage
-              error under grouped cross-validation.
-            - Built a computer vision model predicting the residual compressive strength of
-              impact-damaged aircraft composites to within 5% from ultrasonic D-scans, demonstrating
-              a nondestructive alternative to coupon testing.
+              high-precision lens manufacturing: occurrence prediction reaches 0.92 macro balanced
+              accuracy and 0.85 macro F1 across all 26 learned steps under nested five-fold
+              cross-validation.
+            - Built the cost-estimation pipeline from JSON/SVG specifications and KAD routing data:
+              scanned 8,163 raw JSON files, engineered 236 validated features for 909 lens sides from
+              458 finished lenses, and achieved approximately 10% pooled out-of-fold median absolute
+              percentage error under grouped cross-validation.
+            - Ran a structured architecture selection for a gimbal manufacturer's telemetry
+              forecasting, benchmarking four candidates from LSTM to recent transformer variants
+              against out-of-sample error; time-series anomaly detection for a weather-forecasting
+              client is in progress.
+            - Built the computer vision model predicting the residual compressive strength of
+              impact-damaged aircraft composites to within 5% from ultrasonic D-scans for an aviation
+              client, demonstrating a nondestructive alternative to coupon testing.
             - Deliver client work as tested, reproducible software through config-driven experiments,
               tracked runs, dataset fingerprinting, seeded splits, 400+ automated tests, and enforced
               lint and type checks.
             - Design and run recurring hands-on deep-learning workshops for 50+ colleagues across DLR
               institutes; supervise student projects.
-        # Hidden from the rendered website pending further validation; preserved for later use:
-        # - Benchmarked four forecasting architectures on three-axis gimbal telemetry; PatchTST
-        #   reduced MAE by 49% versus the LSTM baseline.
+        # Verified against TSF/results/*/metrics.csv if a figure is ever wanted here:
+        # PatchTST OVERALL MAE 0.160 vs LSTM 0.316 = 49% lower, on Base roll/pitch/yaw.
+        # Only four models have saved results; iTransformer produced none.
 
       - role: Machine Learning Intern
         time: Oct 2023 - May 2024
@@ -141,11 +151,13 @@ experiences:
         time: Apr 2023 - Sep 2023
         company: DLR — Deutsches Zentrum für Luft- und Raumfahrt, Stade, Germany
         details: |
-            - Built and deployed an internal DLR prototype locating vacuum-bag leaks in aircraft-composite
-              autoclave manufacturing, owning sensor-data acquisition through deployment.
-            - Extended the model from single- to multi-leak localization with uncertainty estimates for
-              each prediction; improved localization accuracy by >12% against the unconstrained
-              architecture by encoding sensor-layout geometry.
+            - Sole contributor on an aviation-client project: built and deployed an internal DLR
+              prototype locating vacuum-bag leaks in aircraft-composite autoclave manufacturing —
+              previously a manual expert search that delayed production — from sensor-data acquisition
+              through model deployment.
+            - Extended the model from single- to multi-leak localization with per-prediction
+              uncertainty estimates, so operators know when to trust the result; improved localization
+              accuracy by >12% against the unconstrained architecture by encoding sensor-layout geometry.
 
       - role: Associate Product Manager — Technical
         time: Sep 2017 - Aug 2021
@@ -217,10 +229,10 @@ skills:
         details: Time-series forecasting, anomaly detection, predictive maintenance, scikit-learn, LightGBM, XGBoost, CatBoost, SHAP, PyTorch, computer vision, transformers, diffusion models
 
       - name: Engineering & MLOps
-        details: Docker, FastAPI, Hydra, MLflow, Optuna, pytest, ruff, mypy, AWS SageMaker
+        details: Docker, FastAPI, Hydra, MLflow, Optuna, pytest, ruff, mypy, CI, AWS SageMaker
 
       - name: Visualization & Domain
-        details: Matplotlib, Plotly, Power BI, Grafana; industrial telemetry, manufacturing data, nondestructive testing
+        details: Matplotlib, Plotly, Power BI, Grafana; industrial telemetry, manufacturing data, time-series compression, nondestructive testing, power-plant operations
 
       - name: Languages
         details: English (C1, business fluent), German (B1, improving), Malayalam (native), Tamil, Hindi
