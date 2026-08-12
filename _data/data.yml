@@ -24,11 +24,6 @@ sidebar:
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
-    # Rendered by _includes/contact.html:94 as a "Resume PDF" link. Lives under
-    # assets/ because resume/ is a nested git repo the outer repo cannot track.
-    # Descriptive filename so the download is identifiable in a recruiter's folder.
-    pdf: /cv/assets/Sreerag_V_Naveenachandran_CV.pdf
-
     languages:
       title: Languages
       info:

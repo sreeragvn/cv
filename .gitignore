@@ -3,7 +3,6 @@ _site/
 .sass-cache/
 .jekyll-metadata
 .jekyll-cache
-# resume/ is a nested git repository, so the outer repo cannot track files inside
-# it (Git would store only a gitlink). The published PDF therefore lives at
-# assets/Sreerag_V_Naveenachandran_CV.pdf -- copy it there after each rebuild.
+# resume/ is a nested git repository whose private build artifacts are not part
+# of this website repository.
 resume/
