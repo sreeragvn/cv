@@ -67,9 +67,9 @@ career-profile:
     title: Summary
     summary: |
       Data Scientist delivering end-to-end machine-learning projects for industrial clients, working
-      from sensor, telemetry, manufacturing, and inspection data across high-precision optics, gimbal
-      systems, and weather forecasting. Takes ambiguous client problems from requirements and proposal
-      development through reproducible modeling, validation, and technical handover. Combines
+      from sensor, telemetry, CAN-bus, manufacturing, and inspection data across high-precision optics,
+      time series forecasting, UI, and airborne weather-data quality. Takes ambiguous client problems from
+      requirements and proposal development through reproducible modeling, validation, and technical handover. Combines
       three years of applied ML in forecasting, predictive maintenance, and computer vision with four
       years of client-facing technical product management and a mechanical-engineering background.
       Co-author of an **ICLR 2026** paper.
@@ -100,20 +100,17 @@ experiences:
         time: Oct 2024 - Present
         company: DLR — Deutsches Zentrum für Luft- und Raumfahrt, Jena, Germany
         details: |
-            - Technical lead on three industry-funded projects in precision optics, gimbal systems, and
-              weather forecasting, owning requirements, proposals, validation planning, and technical
+            - Technical lead on three industry-funded projects in precision optics, time series forecasting, and
+              airborne weather-data quality, owning requirements, proposals, validation planning, and technical
               handover to client stakeholders. Standardized delivery through config-driven experiments,
               tracked runs, data fingerprints, seeded splits, and 400+ automated tests.
             - Developed a feasibility prototype for automated process-step prediction in precision-lens
               manufacturing using 909 lens sides from 458 physical lenses; achieved **0.90 micro F1** and
-              **0.81 macro F1** across 26 process decisions under five-fold lens-grouped cross-validation.
+              **0.81 macro F1** across 26 process decisions under nested lens-grouped cross-validation.
             - Built a cost-estimation pipeline joining JSON/SVG product specifications with
               manufacturing-routing records for 909 lens sides from 458 lenses; compared six model
               families under repeated nested lens-grouped validation, placing **83.7%** of estimates within
               ±20% while limiting severe underestimation to **6.2%**.
-            - Benchmarked LSTM, N-HiTS, TimesNet, and PatchTST on three-axis gimbal telemetry; reduced
-              forecast MAE from **0.32°** to **0.16°** over a 200 ms horizon, a **49%** improvement that
-              informed the client's architecture selection.
             - As the ML contributor to an aviation-client project, developed a computer-vision regression
               model estimating the residual compressive strength of impact-damaged composites from
               ultrasonic D-scans, supporting a feasibility study toward reducing destructive coupon tests.
@@ -153,9 +150,10 @@ experiences:
               multi-site client accounts in Europe, Asia, and the Middle East, translating
               plant-operator requirements into product specifications and coordinating engineering,
               business, and client teams from discovery through delivery.
-            - Built thermodynamic and statistical degradation models from plant sensor data and generated
-              maintenance schedules, including anomaly detection for **boiler tube bursts**, helping thermal
-              power-plant clients move from reactive repair to planned preventive maintenance.
+            - Built thermodynamic and statistical degradation models from plant sensor data for real-time
+              performance and deterioration monitoring, including anomaly detection for **boiler tube bursts**
+              or condenser leakage, helping thermal power-plant clients move from reactive repair to planned
+              preventive maintenance.
             - Applied **ASME, EPRI, and HEI** standards to develop plant-performance models and diagnostics,
               and delivered Grafana and Power BI dashboards providing operators and managers with
               near-real-time KPI visibility across client sites.
