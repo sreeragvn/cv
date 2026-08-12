@@ -68,8 +68,8 @@ career-profile:
     summary: |
       Data Scientist delivering end-to-end machine-learning projects for industrial clients, working
       from sensor, telemetry, manufacturing, and inspection data across high-precision optics, gimbal
-      systems, and weather forecasting, from requirements and proposal writing through model
-      development, validation, and handover. Combines
+      systems, and weather forecasting. Takes ambiguous client problems from requirements and proposal
+      development through reproducible modeling, validation, and technical handover. Combines
       three years of applied ML in forecasting, predictive maintenance, and computer vision with four
       years of client-facing technical product management and a mechanical-engineering background.
       Co-author of an **ICLR 2026** paper.
@@ -81,84 +81,69 @@ education:
         university: TU Braunschweig
         time: Oct 2021 - May 2024
         details: |
-          - Final grade 1.4 (German scale, 1.0 = best), top 4% of the graduating class;
-            Deutschlandstipendium recipient.
-          - Focus: pattern recognition, scientific machine learning, uncertainty quantification,
-            numerical methods, and continuous optimization for data science, supported by advanced
-            programming and algorithms coursework.
+          - Final grade 1.4 on the German scale (1.0 = best), top 4% of the graduating class, and
+            Deutschlandstipendium recipient; focus on pattern recognition, scientific machine learning,
+            uncertainty quantification, numerical methods, and optimization.
       - degree: B.Tech in Mechanical Engineering
         university: University of Kerala
         time: Aug 2012 - Apr 2016
         details: |
-          - First-author Materials Today: Proceedings publication on controlling flow separation in
-            rocket nozzles, developed from a bachelor's thesis at ISRO.
+          - Bachelor's thesis conducted at ISRO on controlling flow separation in rocket nozzles.
 
 experiences:
     title: Professional Experience
     info:
-      # Accuracy constraints mirrored from the PDF:
-      #  - "deployed" is used ONLY for the DLR Stade CFRP prototype; the optics
-      #    system is delivered, not running in the client's live workflow.
-      #  - Both aviation-adjacent projects serve an aviation client. Role differs:
-      #    sole contributor on the Stade leak work, ML-topic contributor only on
-      #    the D-scan project — so nothing there implies project-level ownership.
-      #  - Clients are described by sector, never named.
+      # Public claims are limited to the verified facts in resume/facts.tex and
+      # current CV text. The weather project and all unresolved CV alternatives
+      # remain intentionally undescribed.
       - role: Data Scientist
         time: Oct 2024 - Present
         company: DLR — Deutsches Zentrum für Luft- und Raumfahrt, Jena, Germany
         details: |
-            - Technical lead on three industry-funded client projects in high-precision optics,
-              gimbal systems, and weather forecasting, owning requirements, proposals, model development,
-              and presentations to client management; ML contributor on a fourth project for an
-              aviation client.
-            - Built and delivered the client's first automated process-planning system for
-              high-precision lens manufacturing: occurrence prediction reaches 0.92 macro balanced
-              accuracy and 0.85 macro F1 across all 26 learned steps under nested five-fold
-              cross-validation.
-            - Built the cost-estimation pipeline from JSON/SVG specifications and KAD routing data:
-              scanned 8,163 raw JSON files, engineered 236 validated features for 909 lens sides from
-              458 finished lenses, and achieved approximately 10% pooled out-of-fold median absolute
-              percentage error under grouped cross-validation.
-            - Ran a structured architecture selection for a gimbal manufacturer's telemetry
-              forecasting, benchmarking four candidates from LSTM to recent transformer variants
-              against out-of-sample error; time-series anomaly detection for a weather-forecasting
-              client is in progress.
-            - Built the computer vision model predicting the residual compressive strength of
-              impact-damaged aircraft composites to within 5% from ultrasonic D-scans for an aviation
-              client, demonstrating a nondestructive alternative to coupon testing.
-            - Deliver client work as tested, reproducible software through config-driven experiments,
-              tracked runs, dataset fingerprinting, seeded splits, 400+ automated tests, and enforced
-              lint and type checks.
+            - Technical lead on three industry-funded projects in precision optics, gimbal systems, and
+              weather forecasting, owning requirements, proposals, validation planning, and technical
+              handover to client stakeholders. Standardized delivery through config-driven experiments,
+              tracked runs, data fingerprints, seeded splits, and 400+ automated tests.
+            - Developed a feasibility prototype for automated process-step prediction in precision-lens
+              manufacturing using 909 lens sides from 458 physical lenses; achieved **0.90 micro F1** and
+              **0.81 macro F1** across 26 process decisions under five-fold lens-grouped cross-validation.
+            - Built a cost-estimation pipeline joining JSON/SVG product specifications with
+              manufacturing-routing records for 909 lens sides from 458 lenses; compared six model
+              families under repeated nested lens-grouped validation, placing **83.7%** of estimates within
+              ±20% while limiting severe underestimation to **6.2%**.
+            - Benchmarked LSTM, N-HiTS, TimesNet, and PatchTST on three-axis gimbal telemetry; reduced
+              forecast MAE from **0.32°** to **0.16°** over a 200 ms horizon, a **49%** improvement that
+              informed the client's architecture selection.
+            - As the ML contributor to an aviation-client project, developed a computer-vision regression
+              model estimating the residual compressive strength of impact-damaged composites from
+              ultrasonic D-scans, supporting a feasibility study toward reducing destructive coupon tests.
             - Design and run recurring hands-on deep-learning workshops for 50+ colleagues across DLR
               institutes; supervise student projects.
-        # Verified against TSF/results/*/metrics.csv if a figure is ever wanted here:
-        # PatchTST OVERALL MAE 0.160 vs LSTM 0.316 = 49% lower, on Base roll/pitch/yaw.
-        # Only four models have saved results; iTransformer produced none.
 
       - role: Machine Learning Intern
         time: Oct 2023 - May 2024
         company: Porsche AG, Weissach, Germany
         details: |
-            - Led the proof of concept end to end — problem definition, research direction,
-              experimentation, implementation, and testing — for a context-aware infotainment
-              recommender built with Porsche's in-car UX and engineering teams, achieving >84% top-3
-              accuracy and recall after fine-tuning for previously unseen drivers; published at ACM
-              AutomotiveUI '24 (Best Work-in-Progress Award).
-            - Modelled driver interactions from vehicle CAN bus signals and infotainment logs across
-              time, route type, and driving conditions to inform UI simplification, adapting SimCLR
-              with custom augmentations to learn from sparse data.
+            - Led the end-to-end ML proof of concept for a context-aware in-car recommender with Porsche
+              UX and engineering teams, achieving **83% mean top-3 accuracy** across six leave-one-user-out
+              evaluations before user-specific fine-tuning; published at ACM AutomotiveUI 2024 (Best
+              Work-in-Progress Award).
+            - Modeled next-action intent from CAN-bus time series, interaction histories, and temporal,
+              route, and driving context; designed a transformer combining heterogeneous inputs and adapted
+              SimCLR with domain-specific augmentations to learn from sparse behavioral data.
 
       - role: Machine Learning Intern
         time: Apr 2023 - Sep 2023
         company: DLR — Deutsches Zentrum für Luft- und Raumfahrt, Stade, Germany
         details: |
-            - Sole contributor on an aviation-client project: built and deployed an internal DLR
-              prototype locating vacuum-bag leaks in aircraft-composite autoclave manufacturing —
-              previously a manual expert search that delayed production — from sensor-data acquisition
-              through model deployment.
-            - Extended the model from single- to multi-leak localization with per-prediction
-              uncertainty estimates, so operators know when to trust the result; improved localization
-              accuracy by >12% against the unconstrained architecture by encoding sensor-layout geometry.
+            - Sole ML contributor on an aviation-client project, developing and internally deploying a DLR
+              prototype that localized vacuum-bag leaks in aircraft-composite autoclave manufacturing from
+              flow-rate sensor data, from data acquisition through model validation and technical delivery
+              ([DLR eLib](https://elib.dlr.de/199967/)).
+            - Extended the method from single- to multi-leak localization, added per-prediction uncertainty
+              estimates to flag low-confidence cases, and reduced localization error by more than **12%**
+              relative to an otherwise identical unconstrained baseline by encoding sensor-layout geometry,
+              evaluated on held-out leak cases.
 
       - role: Associate Product Manager — Technical
         time: Sep 2017 - Aug 2021
@@ -168,13 +153,12 @@ experiences:
               multi-site client accounts in Europe, Asia, and the Middle East, translating
               plant-operator requirements into product specifications and coordinating engineering,
               business, and client teams from discovery through delivery.
-            - Built thermodynamic and statistical degradation models from industrial sensor data and
-              generated maintenance schedules — including anomaly detection for boiler tube bursts, a
-              failure mode with both safety and cost consequences — helping thermal power-plant clients
-              move from reactive repair to planned preventive maintenance.
-            - Applied ASME, EPRI, and HEI standards to build plant-performance models and diagnostics,
-              and delivered Grafana and Power BI dashboards giving operators and managers near-real-time
-              KPI visibility across sites.
+            - Built thermodynamic and statistical degradation models from plant sensor data and generated
+              maintenance schedules, including anomaly detection for **boiler tube bursts**, helping thermal
+              power-plant clients move from reactive repair to planned preventive maintenance.
+            - Applied **ASME, EPRI, and HEI** standards to develop plant-performance models and diagnostics,
+              and delivered Grafana and Power BI dashboards providing operators and managers with
+              near-real-time KPI visibility across client sites.
 
       - role: Earlier
         time: 2016 - 2017
@@ -213,7 +197,7 @@ publications:
         link: "https://doi.org/10.1145/3641308.3685036"
         conference: "ACM AutomotiveUI 2024 (Best Work-in-Progress Award)"
 
-      - title: "Parametric study on a method to control flow separation in rocket nozzles"
+      - title: "Parametric Study on a Method to Control Flow Separation in Rocket Nozzles"
         link: "https://doi.org/10.1016/j.matpr.2021.03.291"
         conference: "Materials Today: Proceedings, 2021 (first author)"
 
@@ -227,17 +211,23 @@ skills:
       - name: Programming & Data
         details: Python, SQL, Pandas, NumPy, SciPy, Git, Linux
 
-      - name: ML & Deep Learning
-        details: Time-series forecasting, anomaly detection, predictive maintenance, scikit-learn, LightGBM, XGBoost, CatBoost, SHAP, PyTorch, computer vision, transformers, diffusion models
+      - name: Industrial ML
+        details: Time-series forecasting, anomaly detection, predictive maintenance, regression, multilabel classification, computer vision, transformers, diffusion models
 
-      - name: Engineering & MLOps
-        details: Docker, FastAPI, Hydra, MLflow, Optuna, pytest, ruff, mypy, CI, AWS SageMaker
+      - name: Frameworks
+        details: scikit-learn, PyTorch, LightGBM, XGBoost, CatBoost
 
-      - name: Visualization & Domain
-        details: Matplotlib, Plotly, Power BI, Grafana; industrial telemetry, manufacturing data, time-series compression, nondestructive testing, power-plant operations
+      - name: Validation & Explainability
+        details: Grouped and nested cross-validation, uncertainty quantification, SHAP, Optuna
+
+      - name: Engineering & Delivery
+        details: Docker, FastAPI, Hydra, MLflow, pytest, ruff, mypy, continuous integration (CI), AWS SageMaker
+
+      - name: Domain & Visualization
+        details: Industrial telemetry, manufacturing data, nondestructive testing, power-plant operations, time-series compression, Matplotlib, Plotly, Power BI, Grafana
 
       - name: Languages
-        details: English (C1, business fluent), German (B1, improving), Malayalam (native), Tamil, Hindi
+        details: English (C1), German (B1), Malayalam (native), Tamil and Hindi (conversational)
 
 # footer: >
 #     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
