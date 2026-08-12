@@ -91,9 +91,15 @@
     </li>
     {% endif %}
 
-    {% if sidebar.pdf %}
-    <li class="pdf"><i class="fas fa-file-pdf"></i>
-      <a href="{{ sidebar.pdf }}" target="_blank">Resume PDF</a>
+    {% if sidebar.resume_pdf %}
+    <li class="pdf resume-pdf"><i class="fas fa-file-pdf"></i>
+      <a href="{{ sidebar.resume_pdf | relative_url }}" target="_blank" rel="noopener">Resume PDF</a>
+    </li>
+    {% endif %}
+
+    {% if sidebar.cover_letter_pdf %}
+    <li class="pdf cover-letter-pdf"><i class="fas fa-file-pdf"></i>
+      <a href="{{ sidebar.cover_letter_pdf | relative_url }}" target="_blank" rel="noopener">Cover Letter PDF</a>
     </li>
     {% endif %}
 

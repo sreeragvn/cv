@@ -7,7 +7,7 @@ sidebar:
     # Profile information
     name: Sreerag V Naveenachandran
     tagline: "Data Scientist | Industrial Time Series, Forecasting & Predictive Maintenance"
-    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: profile.jpg  # Public sidebar photo in /assets/images/
 
     # Sidebar links
     email: sreeragvn@gmail.com
@@ -24,6 +24,9 @@ sidebar:
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
+    # Optional public documents: add phone-free PDFs to assets/documents/, then uncomment.
+    # resume_pdf: assets/documents/resume.pdf
+    # cover_letter_pdf: assets/documents/cover-letter.pdf
     languages:
       title: Languages
       info:
@@ -136,11 +139,14 @@ experiences:
         time: Oct 2023 - May 2024
         company: Porsche AG, Weissach, Germany
         details: |
-            - Delivered a context-aware infotainment recommender with Porsche's in-car UX and engineering
-              teams, achieving >84% top-3 accuracy and recall after fine-tuning for previously unseen
-              drivers; published at ACM AutomotiveUI '24 (Best Work-in-Progress Award).
-            - Analyzed driver interactions across time, route type, and driving conditions to inform UI
-              simplification, adapting SimCLR with custom augmentations to learn from sparse data.
+            - Led the proof of concept end to end — problem definition, research direction,
+              experimentation, implementation, and testing — for a context-aware infotainment
+              recommender built with Porsche's in-car UX and engineering teams, achieving >84% top-3
+              accuracy and recall after fine-tuning for previously unseen drivers; published at ACM
+              AutomotiveUI '24 (Best Work-in-Progress Award).
+            - Modelled driver interactions from vehicle CAN bus signals and infotainment logs across
+              time, route type, and driving conditions to inform UI simplification, adapting SimCLR
+              with custom augmentations to learn from sparse data.
 
       - role: Machine Learning Intern
         time: Apr 2023 - Sep 2023
@@ -163,8 +169,9 @@ experiences:
               plant-operator requirements into product specifications and coordinating engineering,
               business, and client teams from discovery through delivery.
             - Built thermodynamic and statistical degradation models from industrial sensor data and
-              generated maintenance schedules, helping thermal power-plant clients move from reactive
-              repair to planned preventive maintenance.
+              generated maintenance schedules — including anomaly detection for boiler tube bursts, a
+              failure mode with both safety and cost consequences — helping thermal power-plant clients
+              move from reactive repair to planned preventive maintenance.
             - Applied ASME, EPRI, and HEI standards to build plant-performance models and diagnostics,
               and delivered Grafana and Power BI dashboards giving operators and managers near-real-time
               KPI visibility across sites.
