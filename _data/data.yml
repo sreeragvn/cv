@@ -66,13 +66,10 @@ sidebar:
 career-profile:
     title: Summary
     summary: |
-      Data Scientist delivering end-to-end machine-learning projects for industrial clients, working
-      from sensor, telemetry, CAN-bus, manufacturing, and inspection data across high-precision optics,
-      time series forecasting, UI, and airborne weather-data quality. Takes ambiguous client problems from
-      requirements and proposal development through reproducible modeling, validation, and technical handover. Combines
-      three years of applied ML in forecasting, predictive maintenance, and computer vision with four
-      years of client-facing technical product management and a mechanical-engineering background.
-      Co-author of an **ICLR 2026** paper.
+      Machine learning engineer with three years of applied machine learning in classification,
+      regression, time-series forecasting and anomaly detection on manufacturing and sensor data,
+      preceded by four years in client-facing technical product management. I focus on applying
+      machine learning solutions across various domains to solve real-world problems.
 
 education:
     title: Education
@@ -81,89 +78,82 @@ education:
         university: TU Braunschweig
         time: Oct 2021 - May 2024
         details: |
-          - Final grade 1.4 on the German scale (1.0 = best), top 4% of the graduating class, and
-            Deutschlandstipendium recipient; focus on pattern recognition, scientific machine learning,
-            uncertainty quantification, numerical methods, and optimization.
+          - Final grade 1.4 (German scale, 1.0 = best), top 4% of the class; Deutschlandstipendium
+            recipient. Focus: pattern recognition, scientific machine learning, uncertainty
+            quantification, optimization.
       - degree: B.Tech in Mechanical Engineering
         university: University of Kerala
         time: Aug 2012 - Apr 2016
         details: |
-          - Bachelor's thesis conducted at ISRO on controlling flow separation in rocket nozzles.
+          - Bachelor's thesis at ISRO on a mathematical model for controlling flow separation in rocket nozzles.
 
 experiences:
     title: Professional Experience
     info:
-      # Public claims are limited to the verified facts in resume/facts.tex and
-      # current CV text. The weather project and all unresolved CV alternatives
-      # remain intentionally undescribed.
+      # Mirrors the CV sent to GlobalFoundries (resume/, tag sent/globalfoundries-2026-10).
+      # Gimbal and weather bullets stay qualitative: facts.tex has no number for the
+      # comparison with the client's incumbent estimate, and the cost-estimation figures
+      # (83.7% / 6.2%) are unreproducible, so they are not published.
       - role: Data Scientist
         time: Oct 2024 - Present
         company: DLR — Deutsches Zentrum für Luft- und Raumfahrt, Jena, Germany
         details: |
-            - Technical lead on three industry-funded projects in precision optics, time series forecasting, and
-              airborne weather-data quality, owning requirements, proposals, validation planning, and technical
-              handover to client stakeholders. Standardized delivery through config-driven experiments,
-              tracked runs, data fingerprints, seeded splits, and 400+ automated tests.
-            - Developed a feasibility prototype for automated process-step prediction in precision-lens
-              manufacturing using 909 lens sides from 458 physical lenses; achieved **0.90 micro F1** and
-              **0.81 macro F1** across 26 process decisions under nested lens-grouped cross-validation.
-            - Built a cost-estimation pipeline joining JSON/SVG product specifications with
-              manufacturing-routing records for 909 lens sides from 458 lenses; compared six model
-              families under repeated nested lens-grouped validation, placing **83.7%** of estimates within
-              ±20% while limiting severe underestimation to **6.2%**.
-            - As the ML contributor to an aviation-client project, developed a computer-vision regression
-              model estimating the residual compressive strength of impact-damaged composites from
-              ultrasonic D-scans, supporting a feasibility study toward reducing destructive coupon tests.
-            - Design and run recurring hands-on deep-learning workshops for 50+ colleagues across DLR
-              institutes; supervise student projects.
+            - Lead technical contributor on three industry-funded projects (precision optics, time-series
+              forecasting, weather-data quality): requirements, proposals, validation, and technical
+              handover to the client.
+            - Digitized process planning and cost estimation for a precision-optics manufacturer:
+              classifiers predict which manufacturing steps a lens needs (recall-based thresholds,
+              calibration), and cost estimates carry prediction intervals that flag low-confidence cases.
+            - ML contributor on an aviation-client project: built a computer-vision regression model that
+              estimates the residual compressive strength of impact-damaged composites from ultrasonic
+              D-scans, as a feasibility study toward fewer destructive coupon tests.
+            - Forecast short-horizon flight-attitude IMU data to improve gimbal stabilization; benchmarked
+              LSTM, N-HiTS, TimesNet, and PatchTST and improved on the existing Kalman-filtered IMU estimate.
+            - Built a time-series anomaly detector for weather-sensor data from sensor boxes on flights,
+              covering data-quality checks and anomalous-weather detection, with a FastAPI/Streamlit
+              operator view.
+            - Run recurring hands-on deep-learning workshops for 50+ colleagues across DLR institutes;
+              supervise student projects and advise colleagues from other engineering fields on applying ML.
 
       - role: Machine Learning Intern
         time: Oct 2023 - May 2024
         company: Porsche AG, Weissach, Germany
         details: |
-            - Led the end-to-end ML proof of concept for a context-aware in-car recommender with Porsche
-              UX and engineering teams, achieving **83% mean top-3 accuracy** across six leave-one-user-out
-              evaluations before user-specific fine-tuning; published at ACM AutomotiveUI 2024 (Best
-              Work-in-Progress Award).
-            - Modeled next-action intent from CAN-bus time series, interaction histories, and temporal,
-              route, and driving context; designed a transformer combining heterogeneous inputs and adapted
-              SimCLR with domain-specific augmentations to learn from sparse behavioral data.
+            - Built and tested a proof of concept on Porsche UI for a context-aware in-car recommender with
+              Porsche digital and engineering teams: **83% mean top-3 accuracy** across six
+              leave-one-user-out evaluations before user-specific fine-tuning. Published at ACM
+              AutomotiveUI 2024 (Best Work-in-Progress Award).
+            - Analyzed CAN-bus time series, interaction histories, and driving context to uncover how
+              drivers use the in-car UI in different driving situations.
 
       - role: Machine Learning Intern
         time: Apr 2023 - Sep 2023
         company: DLR — Deutsches Zentrum für Luft- und Raumfahrt, Stade, Germany
         details: |
-            - Sole ML contributor on an aviation-client project, developing and internally deploying a DLR
-              prototype that localized vacuum-bag leaks in aircraft-composite autoclave manufacturing from
-              flow-rate sensor data, from data acquisition through model validation and technical delivery
-              ([DLR eLib](https://elib.dlr.de/199967/)).
-            - Extended the method from single- to multi-leak localization, added per-prediction uncertainty
-              estimates to flag low-confidence cases, and reduced localization error by more than **12%**
-              relative to an otherwise identical unconstrained baseline by encoding sensor-layout geometry,
-              evaluated on held-out leak cases.
+            - Sole ML contributor on a project for an aviation client: developed and deployed a prototype
+              that locates vacuum-bag leaks in aircraft-composite manufacturing from flow-rate sensor data,
+              without interrupting or modifying the production line ([DLR eLib](https://elib.dlr.de/199967/)).
+            - Extended it to multiple leaks, added uncertainty estimates that flag low-confidence
+              predictions, and reduced localization error by more than **12%** by encoding the sensor
+              layout (evaluated on held-out leaks).
 
       - role: Associate Product Manager — Technical
         time: Sep 2017 - Aug 2021
         company: Kalkitech, Kochi, India
         details: |
-            - Led cross-functional delivery of the Eltrix asset-management platform across 15+
-              multi-site client accounts in Europe, Asia, and the Middle East, translating
-              plant-operator requirements into product specifications and coordinating engineering,
-              business, and client teams from discovery through delivery.
-            - Built thermodynamic and statistical degradation models from plant sensor data for real-time
-              performance and deterioration monitoring, including anomaly detection for **boiler tube bursts**
-              or condenser leakage, helping thermal power-plant clients move from reactive repair to planned
-              preventive maintenance.
-            - Applied **ASME, EPRI, and HEI** standards to develop plant-performance models and diagnostics,
-              and delivered Grafana and Power BI dashboards providing operators and managers with
-              near-real-time KPI visibility across client sites.
+            - Led cross-functional delivery of the Eltrix asset-management platform across 15+ client
+              accounts in Europe, Asia, and the Middle East; turned plant-operator requirements into
+              product specifications.
+            - Built anomaly detection for boiler-tube and condenser leakage in thermal power plants, plus
+              degradation models that turned sensor data into planned maintenance windows.
+            - Applied **ASME, EPRI, and HEI** standards to plant-performance models; delivered Grafana and
+              Power BI dashboards for near-real-time KPI monitoring.
 
-      - role: Earlier
-        time: 2016 - 2017
-        company: Tata Consultancy Services · Ernst & Young, India
+      - role: Earlier experience and breaks
         details: |
-            - Assistant System Engineer Trainee at Tata Consultancy Services (2017), contributing to
-              conversation design for an office-assistant application; Data Analyst at Ernst & Young (2016).
+            Sabbatical, travel in India (Jun - Sep 2024); Assistant System Engineer Trainee, Tata
+            Consultancy Services (Mar - Aug 2017); sabbatical (Aug 2016 - Feb 2017); Data Analyst,
+            Ernst & Young (Jun - Jul 2016).
 
 # Public code only. Client work (optics, gimbal, weather) is deliberately absent:
 # it cannot be linked, and describing unlinkable work here adds nothing the CV
@@ -174,18 +164,17 @@ projects:
       - title: "TEDM — Time Series Forecasting with Elucidated Diffusion Models"
         link: https://gitlab.com/dlr-dw/tedm
         tagline: >
-          Official implementation of the ICLR 2026 paper. Diffusion-based multivariate forecasting,
-          evaluated across eleven public benchmark datasets.
+          Official implementation of the ICLR 2026 paper: diffusion-based multivariate forecasting
+          on eleven public benchmarks.
 
       - title: "local-VQA-tool — on-device visual question answering"
         link: https://github.com/sreeragvn/local-VQA-tool
         tagline: >
-          Open-weight vision-language models running entirely on CPU. Every backend asserts a loopback
-          endpoint and refuses to start otherwise, so images never leave the machine.
+          Vision-language models running entirely on CPU; every backend refuses non-loopback
+          endpoints, so images never leave the machine.
 
 publications:
     title: Publications
-    intro: Peer-reviewed work across machine learning, automotive UX, and aerospace engineering.
     papers:
       - title: "TEDM: Time Series Forecasting with Elucidated Diffusion Models"
         link: "https://openreview.net/forum?id=kQee8MObMc"
@@ -201,31 +190,23 @@ publications:
 
 # Percentage "proficiency" bars were removed deliberately: a self-assigned
 # "Python 95%" is unfalsifiable and reads as a negative to technical reviewers.
-# Categories mirror resume/cv/skills.tex.
+# Categories mirror the CV sent to GlobalFoundries. Languages are listed in the
+# sidebar, so they are not repeated here.
 skills:
     title: Skills
 
     toolset:
       - name: Programming & Data
-        details: Python, SQL, Pandas, NumPy, SciPy, Git, Linux
+        details: Python, SQL, Pandas, NumPy, SciPy, Matplotlib, Plotly, Git, Linux
 
-      - name: Industrial ML
-        details: Time-series forecasting, anomaly detection, predictive maintenance, regression, multilabel classification, computer vision, transformers, diffusion models
+      - name: Machine Learning
+        details: Classification and regression, time-series forecasting, anomaly detection, computer vision, deep learning
 
       - name: Frameworks
-        details: scikit-learn, PyTorch, LightGBM, XGBoost, CatBoost
+        details: scikit-learn, PyTorch, TensorFlow, LightGBM
 
-      - name: Validation & Explainability
-        details: Grouped and nested cross-validation, uncertainty quantification, SHAP, Optuna
-
-      - name: Engineering & Delivery
-        details: Docker, FastAPI, Hydra, MLflow, pytest, ruff, mypy, continuous integration (CI), AWS SageMaker
-
-      - name: Domain & Visualization
-        details: Industrial telemetry, manufacturing data, nondestructive testing, power-plant operations, time-series compression, Matplotlib, Plotly, Power BI, Grafana
-
-      - name: Languages
-        details: English (C1), German (B1), Malayalam (native), Tamil and Hindi (conversational)
+      - name: MLOps & Engineering
+        details: Docker, GitLab CI, FastAPI, MLflow, pandera, pytest, ruff, mypy, AWS SageMaker
 
 # footer: >
 #     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
