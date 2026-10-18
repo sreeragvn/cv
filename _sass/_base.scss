@@ -1,4 +1,7 @@
 /* ======= Base ======= */
+// Skins that don't define their own accent keep the original derived colour.
+$accent: darken($theme-color, 15%) !default;
+
 body {
   font-family: "Roboto", sans-serif;
   color: $text-color-secondary;
@@ -19,10 +22,10 @@ h6 {
 }
 
 a {
-  color: darken($theme-color, 15%);
+  color: $accent;
   &:hover {
     text-decoration: underline;
-    color: darken($theme-color, 30%);
+    color: darken($accent, 10%);
   }
   &:focus {
     text-decoration: none;
@@ -65,7 +68,7 @@ p {
     margin-bottom: 10px;
   }
   .tagline {
-    color: rgba(256, 256, 256, 0.6);
+    color: rgba(256, 256, 256, 0.8);
     font-size: 16px;
     font-weight: 400;
     margin-top: 0;
@@ -121,20 +124,20 @@ p {
       }
     }
     .meta {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(256, 256, 256, 0.8);
       font-weight: 500;
       margin-bottom: 0px;
       margin-top: 0;
     }
     .time {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(256, 256, 256, 0.8);
       font-weight: 500;
       margin-bottom: 0px;
     }
   }
   .languages-container {
     .lang-desc {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(256, 256, 256, 0.8);
     }
   }
 
@@ -168,7 +171,7 @@ p {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
-    color: darken($theme-color, 15%);
+    color: $accent;
     position: relative;
     margin-top: 0;
     margin-bottom: 20px;
@@ -220,7 +223,7 @@ p {
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 5px;
-    color: darken($theme-color, 15%);
+    color: $accent;
   }
   .projects-section {
     .intro {
